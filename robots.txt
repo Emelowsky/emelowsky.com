@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emelowsky.com/sitemap.xml
