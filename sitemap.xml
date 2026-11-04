@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://emelowsky.com/plugins/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority></url>
-  <url><loc>https://emelowsky.com/plugins/plugin-shelf/</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
-  <url><loc>https://emelowsky.com/plugins/fast-group/</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
-  <url><loc>https://emelowsky.com/plugins/individual-take-sync-group/</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
-  <url><loc>https://emelowsky.com/plugins/marker-tracker/</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/</loc><lastmod>2026-11-04</lastmod><priority>1.0</priority></url>
+  <url><loc>https://emelowsky.com/plugins/plugin-shelf/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/fast-group/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/individual-take-sync-group/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/marker-tracker/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/track-drop/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://emelowsky.com/plugins/item-drop/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
 </urlset>
