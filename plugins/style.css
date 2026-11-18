@@ -33,4 +33,6 @@ ul.points{padding-left:20px}ul.points li{margin:6px 0}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px;padding:28px 0;margin-top:20px}
 footer a{color:var(--muted)}footer a:hover{color:var(--text)}
 .crumb{color:var(--muted);font-size:14px;margin-top:22px}
+.promo{display:none;background:linear-gradient(90deg,#3a2a00,#1e1e1e);border-bottom:1px solid #FFC428;text-align:center;padding:10px 20px;font-size:16px}
+.promo b{color:#FFC428}.promo a{color:#FFC428;font-weight:700}
 code{background:#0d0d0d;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:14px;word-break:break-all}
