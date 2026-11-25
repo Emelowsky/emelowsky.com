@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why REAPER track groups lose your volume balance - and how to keep it | Emelowsky Plugins</title>
+<meta name="description" content="Push a grouped fader in REAPER to the top and bring it back - the level differences between your tracks are gone. Here is why it happens and how to keep every offset.">
+<meta name="keywords" content="REAPER track group volume offset, REAPER group fader loses balance, REAPER grouping relative volume">
+<link rel="canonical" href="https://emelowsky.com/plugins/guides/reaper-track-group-loses-volume-balance/">
+<link rel="icon" href="/plugins/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/plugins/img/icon-256.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emelowsky Plugins">
+<meta property="og:title" content="Why REAPER track groups lose your volume balance - and how to keep it | Emelowsky Plugins">
+<meta property="og:description" content="Push a grouped fader in REAPER to the top and bring it back - the level differences between your tracks are gone. Here is why it happens and how to keep every offset.">
+<meta property="og:url" content="https://emelowsky.com/plugins/guides/reaper-track-group-loses-volume-balance/">
+<meta property="og:image" content="https://emelowsky.com/plugins/img/og-emelowsky-plugins.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/plugins/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why REAPER track groups lose your volume balance - and how to keep it", "description": "Push a grouped fader in REAPER to the top and bring it back - the level differences between your tracks are gone. Here is why it happens and how to keep every offset.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "url": "https://emelowsky.com/plugins/guides/reaper-track-group-loses-volume-balance/", "author": {"@type": "Organization", "name": "Emelowsky Plugins", "url": "https://emelowsky.com/plugins/"}, "publisher": {"@type": "Organization", "name": "Emelowsky Plugins", "url": "https://emelowsky.com/plugins/"}, "about": {"@type": "SoftwareApplication", "name": "Fast Group for REAPER", "url": "https://emelowsky.com/plugins/fast-group/"}}</script>
+</head>
+<body>
+<header><div class="wrap">
+<a href="/plugins/" aria-label="Emelowsky Plugins - home"><img src="/plugins/img/logo-emelowsky-plugins.png" alt="Emelowsky Plugins" width="190" height="38"></a>
+<nav><a href="/plugins/#scripts">Scripts</a><a href="/plugins/guides/">Guides</a><a href="/plugins/#about">About</a><a href="https://www.youtube.com/@EmelowskyPlugins">YouTube</a><a href="https://emelowsky.gumroad.com">Shop</a></nav>
+</div></header>
+<div class="promo" id="promo" data-from="2026-11-27T08:00:00Z" data-to="2026-12-02T08:00:00Z">
+<b>Black Friday:</b> every paid script is 50% off until December 1 – the price is already reduced in the shop.
+<a href="https://emelowsky.gumroad.com">Go to the shop</a></div>
+<script>(function(){var b=document.getElementById("promo"),n=Date.now();
+if(n>=Date.parse(b.dataset.from)&&n<Date.parse(b.dataset.to))b.style.display="block";})();</script>
+<main class="wrap">
+<p class="crumb"><a href="/plugins/">Emelowsky Plugins</a> / <a href="/plugins/guides/">Guides</a></p>
+<article style="max-width:820px">
+<h1 style="font-size:34px;line-height:1.25;margin:16px 0 14px">Why REAPER track groups lose your volume balance - and how to keep it</h1>
+
+<p>You set up a drum group: kick a bit louder, overheads lower, room mics way down. Everything sounds right. Then you
+push the group up for the chorus, one of the faders hits the top of its range, you pull the group back down - and the
+balance you built is gone. The tracks now sit closer together than before.</p>
+<h2>Why it happens</h2>
+<p>REAPER's native track grouping moves the members together, but each fader has its own limit. When one member
+reaches the end of its range it stops, while the others keep moving. On the way back they all move by the same amount
+again, so the difference that was "lost" at the limit never comes back. The same happens with pan at hard left or
+hard right.</p>
+<p>In a quick session you may never notice. In a long mix with automation passes and many small rides, it slowly
+pushes your balance around - and you only hear it when the chorus suddenly feels flat.</p>
+<figure style="margin:22px 0"><img src="/plugins/img/guides/fg-offsets.gif" alt="Fast Group keeps the volume offsets of a group at the end of the fader" loading="lazy" style="width:100%;border-radius:12px;border:1px solid #2c2c2c"><figcaption style="color:#a0a0a0;font-size:14px;margin-top:6px">Fast Group keeps the volume offsets of a group at the end of the fader</figcaption></figure><h2>What you can do in REAPER itself</h2>
+<ul class="points">
+<li>Keep group faders away from the top of their range - leave headroom on every member.</li>
+<li>Write down (or snapshot) the levels before big moves, so you can put them back.</li>
+<li>Ride the group with a separate bus or folder fader instead of the grouped track faders.</li>
+</ul>
+<p>All of these work, but they ask you to think about the fader instead of the music.</p>
+<h2>Keeping the offsets with Fast Group</h2>
+<p><a href="/plugins/fast-group/">Fast Group for REAPER</a> is a grouping script that remembers the offset of every track in the
+group. Push the group to the top and back, and every track returns to exactly where it was relative to the others.
+The offsets are stored with the project, so they survive closing and reopening it.</p>
+<ul class="points">
+<li>Volume and pan offsets stay, also at the limits of the fader</li>
+<li>One click (or Ctrl+G) makes a group from the selected tracks</li>
+<li>Mute, solo, record arm and polarity can follow the group too</li>
+<li>Group colours and badges on the tracks, group templates</li>
+</ul>
+
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/ZZkFBwl_45Q" title="Fast Group - overview video" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<h2>Try it</h2>
+<p class="note">Free demo: everything works with up to 2 active groups at a time.</p>
+<div class="btns"><a class="btn" style="background:#E83E34" href="https://emelowsky.gumroad.com/l/fast-group">Get the free demo</a>
+<a class="btn ghost" href="/plugins/fast-group/">More about Fast Group</a></div>
+</article>
+</main>
+<footer><div class="wrap">
+<p>Emelowsky Plugins - scripts for REAPER. Contact: <a href="mailto:emelowsky.plugins@gmail.com">emelowsky.plugins@gmail.com</a></p>
+<p><a href="https://www.youtube.com/@EmelowskyPlugins">YouTube</a> · <a href="https://www.facebook.com/EmelowskyPlugins">Facebook</a> · <a href="https://www.instagram.com/emelowskyplugins">Instagram</a> · <a href="https://www.tiktok.com/@emelowsky.plugins">TikTok</a> · <a href="https://emelowsky.gumroad.com">Shop</a></p>
+<p>REAPER is a trademark of Cockos Incorporated. Emelowsky Plugins is not affiliated with Cockos.</p>
+</div></footer>
+</body>
+</html>

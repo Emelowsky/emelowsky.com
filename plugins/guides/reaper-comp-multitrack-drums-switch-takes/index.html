@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to comp multitrack drums in REAPER: switch the take on every mic at once | Emelowsky Plugins</title>
+<meta name="description" content="Recorded drums on many mics in several takes? Switch the take on one mic in REAPER and let every mic follow - playlist-style comping without losing phase.">
+<meta name="keywords" content="REAPER comp drums, REAPER switch takes all tracks, REAPER playlists like Pro Tools, REAPER multitrack comping">
+<link rel="canonical" href="https://emelowsky.com/plugins/guides/reaper-comp-multitrack-drums-switch-takes/">
+<link rel="icon" href="/plugins/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/plugins/img/icon-256.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emelowsky Plugins">
+<meta property="og:title" content="How to comp multitrack drums in REAPER: switch the take on every mic at once | Emelowsky Plugins">
+<meta property="og:description" content="Recorded drums on many mics in several takes? Switch the take on one mic in REAPER and let every mic follow - playlist-style comping without losing phase.">
+<meta property="og:url" content="https://emelowsky.com/plugins/guides/reaper-comp-multitrack-drums-switch-takes/">
+<meta property="og:image" content="https://emelowsky.com/plugins/img/og-emelowsky-plugins.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/plugins/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to comp multitrack drums in REAPER: switch the take on every mic at once", "description": "Recorded drums on many mics in several takes? Switch the take on one mic in REAPER and let every mic follow - playlist-style comping without losing phase.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "url": "https://emelowsky.com/plugins/guides/reaper-comp-multitrack-drums-switch-takes/", "author": {"@type": "Organization", "name": "Emelowsky Plugins", "url": "https://emelowsky.com/plugins/"}, "publisher": {"@type": "Organization", "name": "Emelowsky Plugins", "url": "https://emelowsky.com/plugins/"}, "about": {"@type": "SoftwareApplication", "name": "Individual Take Sync Group for REAPER", "url": "https://emelowsky.com/plugins/individual-take-sync-group/"}}</script>
+</head>
+<body>
+<header><div class="wrap">
+<a href="/plugins/" aria-label="Emelowsky Plugins - home"><img src="/plugins/img/logo-emelowsky-plugins.png" alt="Emelowsky Plugins" width="190" height="38"></a>
+<nav><a href="/plugins/#scripts">Scripts</a><a href="/plugins/guides/">Guides</a><a href="/plugins/#about">About</a><a href="https://www.youtube.com/@EmelowskyPlugins">YouTube</a><a href="https://emelowsky.gumroad.com">Shop</a></nav>
+</div></header>
+<div class="promo" id="promo" data-from="2026-11-27T08:00:00Z" data-to="2026-12-02T08:00:00Z">
+<b>Black Friday:</b> every paid script is 50% off until December 1 – the price is already reduced in the shop.
+<a href="https://emelowsky.gumroad.com">Go to the shop</a></div>
+<script>(function(){var b=document.getElementById("promo"),n=Date.now();
+if(n>=Date.parse(b.dataset.from)&&n<Date.parse(b.dataset.to))b.style.display="block";})();</script>
+<main class="wrap">
+<p class="crumb"><a href="/plugins/">Emelowsky Plugins</a> / <a href="/plugins/guides/">Guides</a></p>
+<article style="max-width:820px">
+<h1 style="font-size:34px;line-height:1.25;margin:16px 0 14px">How to comp multitrack drums in REAPER: switch the take on every mic at once</h1>
+
+<p>You recorded drums on eleven microphones, in three takes. Each mic is its own track, and each take is a take
+inside the item. Now you want the verse from take 2 and the chorus from take 3.</p>
+<p>The problem: the take belongs to each item separately. Picking take 2 on the snare does not change the kick, the
+toms or the overheads - you have to do it on every mic. And if one cut ends up a few samples off on a single track,
+the mics are no longer in phase, which is often hard to hear until the drums suddenly sound thin.</p>
+<h2>Comping like playlists in Pro Tools</h2>
+<p><a href="/plugins/individual-take-sync-group/">Individual Take Sync Group for REAPER</a> links the items you recorded together into a group.
+From then on, every edit on one of them happens on all of them:</p>
+<ul class="points">
+<li>Switch the active take on one mic - every mic in the group switches to the same take</li>
+<li>Split one track, and the whole group is split at the same point; the new parts join the group by themselves</li>
+<li>Moves, trims and deletes follow too, sample accurate, so the phase between the mics stays intact</li>
+<li>Several independent groups: drums, vocals, guitars</li>
+</ul>
+<figure style="margin:22px 0"><img src="/plugins/img/guides/itsg-takes.gif" alt="Switch the take on the snare - every drum mic switches with it" loading="lazy" style="width:100%;border-radius:12px;border:1px solid #2c2c2c"><figcaption style="color:#a0a0a0;font-size:14px;margin-top:6px">Switch the take on the snare - every drum mic switches with it</figcaption></figure><figure style="margin:22px 0"><img src="/plugins/img/guides/itsg-cut-comp.gif" alt="Cut once, pick a take per part, on all mics" loading="lazy" style="width:100%;border-radius:12px;border:1px solid #2c2c2c"><figcaption style="color:#a0a0a0;font-size:14px;margin-top:6px">Cut once, pick a take per part, on all mics</figcaption></figure><h2>A typical comping pass</h2>
+<ol>
+<li>Make a group from the drum tracks.</li>
+<li>Split at the start of the chorus on any mic - all mics are split.</li>
+<li>Pick take 3 for the chorus on the snare - all mics switch.</li>
+<li>Listen, move the cut a little if needed - the whole group follows.</li>
+</ol>
+<p>Group order matters: keep the widest group (for example "All") at the top of the list, so edits flow from the
+biggest group down.</p>
+
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/UCruYfgGcGY" title="Individual Take Sync Group - overview video" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<h2>Try it</h2>
+<p class="note">Free demo: 2 groups with up to 6 tracks each.</p>
+<div class="btns"><a class="btn" style="background:#FAC81E" href="https://emelowsky.gumroad.com/l/individual-take-sync-group">Get the free demo</a>
+<a class="btn ghost" href="/plugins/individual-take-sync-group/">More about Individual Take Sync Group</a></div>
+</article>
+</main>
+<footer><div class="wrap">
+<p>Emelowsky Plugins - scripts for REAPER. Contact: <a href="mailto:emelowsky.plugins@gmail.com">emelowsky.plugins@gmail.com</a></p>
+<p><a href="https://www.youtube.com/@EmelowskyPlugins">YouTube</a> · <a href="https://www.facebook.com/EmelowskyPlugins">Facebook</a> · <a href="https://www.instagram.com/emelowskyplugins">Instagram</a> · <a href="https://www.tiktok.com/@emelowsky.plugins">TikTok</a> · <a href="https://emelowsky.gumroad.com">Shop</a></p>
+<p>REAPER is a trademark of Cockos Incorporated. Emelowsky Plugins is not affiliated with Cockos.</p>
+</div></footer>
+</body>
+</html>
